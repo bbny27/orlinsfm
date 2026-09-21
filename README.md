@@ -24,15 +24,15 @@ First, it provides a relatively direct implementation of the algorithm in:
 
 Orlin's paper gives a strongly polynomial SFM algorithm with running time
 
-$\[
+$$\[
 O(n^5 EO+n^6),
-\]$
+\]$$
 
 where `EO` is the time required for one evaluation of the submodular function. Orlin also writes the bound as
 
-\[
+$$\[
 O(n^4 EG+n^6),
-\]
+\]$$
 
 where `EG` is the cost of constructing one greedy extreme base.
 
