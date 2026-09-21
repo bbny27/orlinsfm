@@ -25,13 +25,13 @@ First, it provides a relatively direct implementation of the algorithm in:
 Orlin's paper gives a strongly polynomial SFM algorithm with running time
 
 $$\[
-O(n^5 EO+n^6),
+O(n^5 EO+n^6)
 \]$$
 
 where `EO` is the time required for one evaluation of the submodular function. Orlin also writes the bound as
 
 $$\[
-O(n^4 EG+n^6),
+O(n^4 EG+n^6)
 \]$$
 
 where `EG` is the cost of constructing one greedy extreme base.
@@ -55,78 +55,78 @@ The exact rational solver is primarily the **reference implementation for correc
 
 For a finite ground set
 
-\[
-V=\{1,\dots,n\},
-\]
+$$\[
+V=\{1,\dots,n\}
+\]$$
 
 a set function
 
-\[
+$$\[
 F:2^V\rightarrow \mathbb{R}
-\]
+\]$$
 
 is **submodular** if
 
-\[
+$$\[
 F(A)+F(B)\geq F(A\cup B)+F(A\cap B)
-\]
+\]$$
 
-for all \(A,B\subseteq V\).
+for all $\(A,B\subseteq V\)$.
 
 Equivalently, submodularity can be interpreted as **diminishing marginal returns**:
 
-\[
+$$\[
 F(A\cup\{v\})-F(A)
 \geq
 F(B\cup\{v\})-F(B)
-\]
+\]$$
 
-whenever \(A\subseteq B\) and \(v\notin B\).
+whenever $\(A\subseteq B\)$ and $\(v\notin B\)$.
 
 The SFM problem is
 
-\[
+$$\[
 \min_{S\subseteq V}F(S).
-\]
+\]$$
 
 The implementation normalizes the oracle when necessary so that internally
 
-\[
+$$\[
 F(\varnothing)=0.
-\]
+\]$$
 
 Adding or subtracting the constant \(F(\varnothing)\) does not change the minimizer.
 
 A central object is the **base polyhedron**
 
-\[
+$$\[
 B(F)=
 \left\{
 x\in\mathbb{R}^{n}:
 x(V)=F(V),\;
 x(S)\leq F(S)\quad \forall S\subseteq V
 \right\}.
-\]
+\]$$
 
-For an ordering \(L=(v_1,\dots,v_n)\), a greedy extreme base is defined by
+For an ordering $\(L=(v_1,\dots,v_n)\)$, a greedy extreme base is defined by
 
-\[
+$$\[
 y_L(v_j)
 =
 F(\{v_1,\dots,v_j\})
 -
 F(\{v_1,\dots,v_{j-1}\}).
-\]
+\]$$
 
 Orlin's algorithm maintains a point in the base polyhedron as a convex combination of such greedy extreme bases,
 
-\[
+$$\[
 x=\sum_{d\in D}\lambda_d y_d,
 \qquad
 \lambda_d>0,
 \qquad
 \sum_{d\in D}\lambda_d=1,
-\]
+\]$$
 
 while manipulating the associated **distance functions**, primary/secondary extreme bases, the zero set \(V^0\), and distance gaps until the optimality conditions are met.
 
@@ -146,10 +146,7 @@ Its responsibilities include:
 - maintaining the current base vector \(x\);
 - computing primary distance functions \(p(v)\);
 - constructing secondary functions \(s(v)=INC(p(v),v)\);
-- building columns
-  \[
-  y_{s(v)}-y_{p(v)};
-  \]
+- building columns $y_{s(v)}-y_{p(v)}$;
 - solving for the non-negative direction vector \(\gamma\);
 - taking the maximum feasible step \(\alpha\);
 - updating \(\lambda\) and \(x\);
