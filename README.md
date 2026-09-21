@@ -104,7 +104,6 @@ F(\varnothing)=0.
 $$
 
 $$
-
 B(F) =
 \left\{
 x\in\mathbb{R}^{n}:
@@ -117,10 +116,7 @@ For an ordering $L=(v_1,\dots,v_n)$, a greedy extreme base is defined by
 
 $$
 y_L(v_j)
-=
-F(\{v_1,\dots,v_j\})
--
-F(\{v_1,\dots,v_{j-1}\}).
+= F(\{v_1,\dots,v_j\}) - F(\{v_1,\dots,v_{j-1}\})
 $$
 
 Orlin's algorithm maintains a point in the base polyhedron as a convex combination of such greedy extreme bases,
