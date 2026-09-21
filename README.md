@@ -95,22 +95,7 @@ $$
 F(\varnothing)=0.
 $$
 
-Adding or subtracting the constant \(F(\varnothing)\) does not change the minimizer.
-
-A central object is the **base polyhedron**
-
-$$
-F(\varnothing)=0.
-$$
-
-$$
-B(F) =
-\left\{
-x\in\mathbb{R}^{n}:
-x(V)=F(V),\;
-x(S)\leq F(S)\quad \forall S\subseteq V
-\right\}.
-$$
+Adding or subtracting the constant $F(\varnothing)$ does not change the minimizer.
 
 For an ordering $L=(v_1,\dots,v_n)$, a greedy extreme base is defined by
 
