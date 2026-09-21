@@ -1,0 +1,34 @@
+c Deterministic weighted-coverage plus modular objective.
+c items=12; features=16; density=0.3; seed=41012.
+c Known optimum certified independently by an integer min-cut reduction.
+p coverage 12
+offset 0
+u 0 -13
+u 1 -32
+u 2 -8
+u 3 30
+u 4 37
+u 5 15
+u 6 22
+u 7 31
+u 8 50
+u 9 65
+u 10 34
+u 11 33
+f 10 1 5 9
+f 4 1 9 10 11
+f 8 4 10
+f 2 1 4 5 6
+f 7 8 9 10 11
+f 11 7
+f 12 3 7 8 9 11
+f 7 2 3 4
+f 12 1 4 9
+f 9 0 6 8 9
+f 4 7 10
+f 3 7 8 9
+f 7 4 8 9 11
+f 1 0 1 8
+f 2 0 1 5 11
+f 10 3 6 8 10
+o -6

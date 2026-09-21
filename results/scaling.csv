@@ -1,0 +1,16 @@
+instance,sha256,n,solver,arithmetic,known,status,minimum,median_seconds,detail
+datasets\scaling\tsukuba_crop_16x16.max,5e9df84efb9d34fceb6fd348fa123d39d9bca88bfc955979760e0aa501585a3a,256,orlin_double,IEEE 754 binary64,50,PASS_KNOWN,50,107.1771837,
+datasets\scaling\tsukuba_crop_16x16.max,5e9df84efb9d34fceb6fd348fa123d39d9bca88bfc955979760e0aa501585a3a,256,julia,Float64,50,PASS_KNOWN,50,7.2884049,
+datasets\scaling\tsukuba_crop_16x16.max,5e9df84efb9d34fceb6fd348fa123d39d9bca88bfc955979760e0aa501585a3a,256,matlab,Float64,50,PASS_KNOWN,50,0.026813,
+datasets\scaling\tsukuba_crop_32x32.max,6e0deeda5b9921c3f1b0d0377f5dee9dc2f395efd4fcc2ab8cfcce7a0c12ae0e,1024,orlin_double,IEEE 754 binary64,186,TIMEOUT,,,600.0s process budget
+datasets\scaling\tsukuba_crop_32x32.max,6e0deeda5b9921c3f1b0d0377f5dee9dc2f395efd4fcc2ab8cfcce7a0c12ae0e,1024,julia,Float64,186,TIMEOUT,,,600.0s process budget
+datasets\scaling\tsukuba_crop_32x32.max,6e0deeda5b9921c3f1b0d0377f5dee9dc2f395efd4fcc2ab8cfcce7a0c12ae0e,1024,matlab,Float64,186,PASS_KNOWN,186,0.2476174,
+datasets\scaling\tsukuba_crop_4x4.max,130ed4b3e6f7e03d09359512b7625e2956b66c301a1cefe11b8f88e5c12133f0,16,orlin_double,IEEE 754 binary64,0,PASS_KNOWN,0,0.0001132,
+datasets\scaling\tsukuba_crop_4x4.max,130ed4b3e6f7e03d09359512b7625e2956b66c301a1cefe11b8f88e5c12133f0,16,julia,Float64,0,PASS_KNOWN,0,0.0015165,
+datasets\scaling\tsukuba_crop_4x4.max,130ed4b3e6f7e03d09359512b7625e2956b66c301a1cefe11b8f88e5c12133f0,16,matlab,Float64,0,PASS_KNOWN,0,0.0019157,
+datasets\scaling\tsukuba_crop_64x64.max,cd00348ba552b49431dfe462fc16908a127655ab9e982a17fc61a048d5ed5f9d,4096,orlin_double,IEEE 754 binary64,590,SKIPPED_SIZE,,,exceeds --max-n 1024
+datasets\scaling\tsukuba_crop_64x64.max,cd00348ba552b49431dfe462fc16908a127655ab9e982a17fc61a048d5ed5f9d,4096,julia,Float64,590,SKIPPED_SIZE,,,exceeds --max-n 1024
+datasets\scaling\tsukuba_crop_64x64.max,cd00348ba552b49431dfe462fc16908a127655ab9e982a17fc61a048d5ed5f9d,4096,matlab,Float64,590,SKIPPED_SIZE,,,exceeds --max-n 1024
+datasets\scaling\tsukuba_crop_8x8.max,67d086f43bf653df3ee3f3fa292fb88a6eb56320bbdc6e08069ab4dc8323c292,64,orlin_double,IEEE 754 binary64,0,PASS_KNOWN,0,0.2120193,
+datasets\scaling\tsukuba_crop_8x8.max,67d086f43bf653df3ee3f3fa292fb88a6eb56320bbdc6e08069ab4dc8323c292,64,julia,Float64,0,PASS_KNOWN,0,0.0525646,
+datasets\scaling\tsukuba_crop_8x8.max,67d086f43bf653df3ee3f3fa292fb88a6eb56320bbdc6e08069ab4dc8323c292,64,matlab,Float64,0,PASS_KNOWN,0,0.0037011,

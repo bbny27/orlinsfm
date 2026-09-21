@@ -1,0 +1,13 @@
+c Weighted coverage plus modular item costs.
+p coverage 5
+offset 1
+u 0 -10
+u 1 2
+u 2 -8
+u 3 3
+u 4 -7
+f 5 0 1
+f 4 1 2 3
+f 3 2 4
+f 6 0 3 4
+o -6

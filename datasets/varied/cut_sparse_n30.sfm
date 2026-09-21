@@ -1,0 +1,83 @@
+c Deterministic synthetic directed cut with modular terms.
+c seed=11030; edge_probability=0.06; arcs=47.
+c Known optimum certified independently by SciPy integer Dinic min-cut.
+p cut 30
+offset 0
+u 0 -12
+u 1 -5
+u 2 -25
+u 3 -23
+u 4 -23
+u 5 -22
+u 6 -1
+u 7 -20
+u 8 -2
+u 9 -33
+u 10 9
+u 11 6
+u 12 20
+u 13 6
+u 14 20
+u 15 25
+u 16 17
+u 17 33
+u 18 17
+u 19 3
+u 20 17
+u 21 25
+u 22 11
+u 23 3
+u 24 3
+u 25 6
+u 26 13
+u 27 40
+u 28 27
+u 29 17
+a 0 19 2
+a 1 27 4
+a 2 13 3
+a 2 15 6
+a 2 17 5
+a 3 14 7
+a 3 18 9
+a 3 27 6
+a 4 12 8
+a 4 27 4
+a 5 28 8
+a 5 29 7
+a 7 9 6
+a 7 16 4
+a 9 13 2
+a 9 17 3
+a 9 22 9
+a 9 24 2
+a 9 25 5
+a 11 2 4
+a 11 8 1
+a 12 0 9
+a 14 9 2
+a 14 26 4
+a 15 4 1
+a 15 7 4
+a 15 16 1
+a 15 26 7
+a 16 2 6
+a 16 18 4
+a 17 7 5
+a 17 20 7
+a 17 27 9
+a 18 16 1
+a 20 12 2
+a 20 15 5
+a 20 18 2
+a 21 4 9
+a 21 28 7
+a 26 22 1
+a 27 5 6
+a 27 10 8
+a 27 23 2
+a 28 9 3
+a 28 21 8
+a 29 14 6
+a 29 17 3
+o -72

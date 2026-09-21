@@ -1,0 +1,17 @@
+c Deterministic concave-cardinality plus modular objective.
+c F(S)=sum_i_in_S u_i-3*|S|*(|S|-1)/2; seed=21010.
+c Known optimum certified by sorting modular costs and checking every cardinality.
+p concave 10
+offset 0
+u 0 29
+u 1 23
+u 2 2
+u 3 20
+u 4 26
+u 5 14
+u 6 11
+u 7 8
+u 8 -1
+u 9 5
+q 3
+o -6

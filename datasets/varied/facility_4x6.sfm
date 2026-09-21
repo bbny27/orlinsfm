@@ -1,0 +1,33 @@
+c Deterministic facility-location utility plus modular objective.
+c Coverage rows are the exact integer threshold decomposition of sum_j max_i similarity[j,i].
+c facilities=4; clients=6; seed=51004.
+c Known optimum certified independently by an integer min-cut reduction.
+p coverage 4
+offset 0
+u 0 -47
+u 1 42
+u 2 38
+u 3 32
+f 1 0 1 2 3
+f 8 0 1 2
+f 1 0 1
+f 1 1
+f 1 0 1 2 3
+f 1 1 2 3
+f 1 1 2
+f 1 2
+f 1 0 1 2 3
+f 3 0 1 2
+f 7 0 2
+f 1 2
+f 4 0 1 2 3
+f 1 0 2 3
+f 4 0
+f 3 0 1 2 3
+f 1 0 1 3
+f 4 1 3
+f 2 3
+f 4 0 1 2 3
+f 7 0 1 3
+f 1 3
+o -1

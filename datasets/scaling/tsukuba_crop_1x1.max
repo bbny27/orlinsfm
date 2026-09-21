@@ -1,0 +1,5 @@
+c Induced rectangular crop; boundary arcs omitted; solution computed with SciPy integer Dinic
+c source=BVZ-tsukuba0.max x=144 y=112 width=1 height=1
+p max 3 0
+n 1 s
+n 2 t

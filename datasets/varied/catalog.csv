@@ -1,0 +1,27 @@
+file,family,n,optimum,selected_size,parameters,certificate
+varied/cut_sparse_n12.sfm,sparse cut,12,-58,4,p=0.12; arcs=16; seed=11012,integer min-cut
+varied/cut_sparse_n24.sfm,sparse cut,24,-101,8,p=0.08; arcs=52; seed=11024,integer min-cut
+varied/cut_sparse_n30.sfm,sparse cut,30,-72,10,p=0.06; arcs=47; seed=11030,integer min-cut
+varied/cut_dense_n50.sfm,dense cut,50,-1625,16,p=0.3; arcs=760; seed=12050,integer min-cut
+varied/cut_dense_n80.sfm,dense cut,80,-3421,26,p=0.25; arcs=1545; seed=12080,integer min-cut
+varied/cut_dense_n120.sfm,dense cut,120,-6048,40,p=0.2; arcs=2808; seed=12120,integer min-cut
+varied/concave_n10.sfm,concave cardinality,10,-6,6,scale=3; seed=21010,all cardinalities after sorting
+varied/concave_n25.sfm,concave cardinality,25,-15,15,scale=2; seed=21025,all cardinalities after sorting
+varied/concave_n50.sfm,concave cardinality,50,-30,30,scale=1; seed=21050,all cardinalities after sorting
+varied/concave_n100.sfm,concave cardinality,100,-60,60,scale=1; seed=21100,all cardinalities after sorting
+varied/concave_n140.sfm,concave cardinality,140,-84,84,scale=1; seed=21140,all cardinalities after sorting
+varied/matching_3x3.sfm,bipartite matching rank,3,-1,1,right=3; p=0.6; edges=8; seed=31003,exhaustive subsets + exact matching
+varied/matching_8x8.sfm,bipartite matching rank,8,-4,4,right=8; p=0.4; edges=26; seed=31008,exhaustive subsets + exact matching
+varied/matching_15x15.sfm,bipartite matching rank,15,-7,7,right=15; p=0.3; edges=61; seed=31015,exhaustive subsets + exact matching
+varied/coverage_12x16.sfm,weighted coverage,12,-6,3,features=16; density=0.3; seed=41012,integer min-cut reduction
+varied/coverage_30x40.sfm,weighted coverage,30,-201,7,features=40; density=0.22; seed=41030,integer min-cut reduction
+varied/coverage_60x80.sfm,weighted coverage,60,-832,15,features=80; density=0.15; seed=41060,integer min-cut reduction
+varied/coverage_100x120.sfm,weighted coverage,100,-1362,25,features=120; density=0.1; seed=41100,integer min-cut reduction
+varied/coverage_140x180.sfm,weighted coverage,140,-2042,35,features=180; density=0.08; seed=41140,integer min-cut reduction
+varied/facility_4x6.sfm,facility location,4,-1,1,clients=6; threshold_features=22; seed=51004,exact threshold expansion + integer min-cut
+varied/facility_8x12.sfm,facility location,8,-43,2,clients=12; threshold_features=75; seed=51008,exact threshold expansion + integer min-cut
+varied/facility_15x25.sfm,facility location,15,-451,5,clients=25; threshold_features=219; seed=51015,exact threshold expansion + integer min-cut
+varied/facility_25x40.sfm,facility location,25,-1466,8,clients=40; threshold_features=415; seed=51025,exact threshold expansion + integer min-cut
+varied/special_path_n10.sfm,special path,10,-36,4,arcs=18,integer min-cut
+varied/special_star_n8.sfm,special star,8,-33,3,arcs=14,integer min-cut
+varied/special_complete_n6.sfm,special complete,6,-14,2,arcs=30,integer min-cut

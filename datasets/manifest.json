@@ -1,0 +1,191 @@
+[
+  {
+    "file": "scaling/tsukuba_crop_16x16.max",
+    "nodes": 258,
+    "ground_size": 256,
+    "arcs": 1150,
+    "optimum": 50,
+    "sha256": "5e9df84efb9d34fceb6fd348fa123d39d9bca88bfc955979760e0aa501585a3a",
+    "reference": "induced crop; SciPy Dinic"
+  },
+  {
+    "file": "scaling/tsukuba_crop_32x32.max",
+    "nodes": 1026,
+    "ground_size": 1024,
+    "arcs": 4735,
+    "optimum": 186,
+    "sha256": "6e0deeda5b9921c3f1b0d0377f5dee9dc2f395efd4fcc2ab8cfcce7a0c12ae0e",
+    "reference": "induced crop; SciPy Dinic"
+  },
+  {
+    "file": "scaling/tsukuba_crop_4x4.max",
+    "nodes": 18,
+    "ground_size": 16,
+    "arcs": 58,
+    "optimum": 0,
+    "sha256": "130ed4b3e6f7e03d09359512b7625e2956b66c301a1cefe11b8f88e5c12133f0",
+    "reference": "induced crop; SciPy Dinic"
+  },
+  {
+    "file": "scaling/tsukuba_crop_64x64.max",
+    "nodes": 4098,
+    "ground_size": 4096,
+    "arcs": 19579,
+    "optimum": 590,
+    "sha256": "cd00348ba552b49431dfe462fc16908a127655ab9e982a17fc61a048d5ed5f9d",
+    "reference": "induced crop; SciPy Dinic"
+  },
+  {
+    "file": "scaling/tsukuba_crop_8x8.max",
+    "nodes": 66,
+    "ground_size": 64,
+    "arcs": 273,
+    "optimum": 0,
+    "sha256": "67d086f43bf653df3ee3f3fa292fb88a6eb56320bbdc6e08069ab4dc8323c292",
+    "reference": "induced crop; SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba0.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 514483,
+    "optimum": 34669,
+    "sha256": "498d169e680a32842666dd1144618449123a57127ddfdb4fb7ec3d47e9579d0b",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba1.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 526213,
+    "optimum": 264801,
+    "sha256": "433cb970d91f8efbe40e7097164c15d9912fa2f1fa01b1ffbba32716e85e96ff",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba10.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 516529,
+    "optimum": 236298,
+    "sha256": "22f7b48ca15320dfff7609d50c481c452ab582ab391de03ade0a73b3037390ce",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba11.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 510446,
+    "optimum": 42705,
+    "sha256": "2c2e496851e828f850d19353b9a12d11cd3cb291cb369a1a344e2d741ff5551b",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba12.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 510816,
+    "optimum": 38887,
+    "sha256": "9b0124b7cb88fa9878ed8367b54d08bf8bc3580ea5ad84c4eafc2ed7fe966811",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba13.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 551616,
+    "optimum": 0,
+    "sha256": "76fe9556c2bcd45ef380410549fce51925567bca8efb15730e666d3009ee7580",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba14.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 515315,
+    "optimum": 50599,
+    "sha256": "98640490da4067b506b461ac62fdbea9cff550d07aff708fa23ebd92a1f17fe0",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba15.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 518994,
+    "optimum": 33349,
+    "sha256": "589d156b06587d78f94801e797915197598cae5aa8f2cae216464d650621d3c3",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba2.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 508272,
+    "optimum": 41538,
+    "sha256": "bc8e248fe0b7f8c7de3bab6840ca1d96ce9798e9235fdfc223e234ff81fbd5c5",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba3.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 506721,
+    "optimum": 35379,
+    "sha256": "eb8ac104b1ba1504bd4b4573a6cffc6301d2eb6f2b897860ca33a76284f69f3c",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba4.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 496135,
+    "optimum": 48947,
+    "sha256": "cdf361ee6189df8ae9a5c28a4fedb443c258f71b44d6b90acf7a8e6c8ea1de52",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba5.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 501390,
+    "optimum": 74372,
+    "sha256": "f067e39b322c53747add29357492cdc06c153567cb5ced0f36cefb375fa53b69",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba6.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 512938,
+    "optimum": 187576,
+    "sha256": "b0e4bd81143ea73aa113f3ec547f65fe00d6c86c6118acfaa74fb6634fb75c3b",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba7.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 502599,
+    "optimum": 41095,
+    "sha256": "dbe91efe4a145d8b4af1d322f4d86e4fafba8faf22d45bed5cdbc6b7d79b54aa",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba8.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 503938,
+    "optimum": 54458,
+    "sha256": "faf17e2535c1e78251a717442cf7788895e50781d0f331e3401d1a898c234b6f",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  },
+  {
+    "file": "vision/BVZ-tsukuba9.max",
+    "nodes": 110594,
+    "ground_size": 110592,
+    "arcs": 519074,
+    "optimum": 298716,
+    "sha256": "391126938a9bac395b125c71d4e566768aef60019eb4438dc4ef9245cddc0403",
+    "reference": "publisher .sol; independently checked with SciPy Dinic"
+  }
+]

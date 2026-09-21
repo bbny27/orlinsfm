@@ -1,0 +1,17 @@
+c Deterministic transversal-matroid rank plus modular objective.
+c left=3; right=3; edge_probability=0.6; seed=31003.
+c Known optimum certified by exhaustive subsets and exact augmenting-path matching.
+p matching 3 3
+offset 0
+u 0 -2
+u 1 2
+u 2 2
+e 0 0
+e 0 1
+e 1 0
+e 1 1
+e 1 2
+e 2 0
+e 2 1
+e 2 2
+o -1
