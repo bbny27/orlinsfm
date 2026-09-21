@@ -99,6 +99,10 @@ Adding or subtracting the constant \(F(\varnothing)\) does not change the minimi
 
 A central object is the **base polyhedron**
 
+$$\[
+F(\varnothing)=0.
+\]$$
+
 $$
 \[
 B(F) =
