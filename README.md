@@ -644,7 +644,7 @@ When running the benchmark, pass the actual toolbox directory:
 
 ---
 
-# 8. Julia patches and adapter fixes
+# 8. Julia patches 
 
 This project discovered a correctness issue in the Julia comparison package on benchmark instances that trigger a singleton collapse in a Wolfe minor cycle. This section still requires more review to determine if it is a genuine error.
 
@@ -720,77 +720,6 @@ cd ..\..\..
 ```
 
 If `git apply` says the patch is already applied, inspect the source before applying it again.
-
----
-
-## 8.2 Julia workspace allocation fix in the benchmark adapter
-
-A separate issue was caused by constructing the Wolfe workspace using the iteration limit as a workspace-size argument.
-
-That can allocate an enormous dense affine workspace.
-
-For example, a value such as:
-
-```julia
-MAX_ITERATIONS = 1_000_000
-```
-
-is a reasonable *iteration cap* but completely unreasonable as the number of active vertices to pre-allocate in a dense workspace.
-
-The benchmark adapter therefore uses:
-
-```julia
-workspace = WolfeWorkspace(instance.n)
-```
-
-and passes the iteration cap only to the solver:
-
-```julia
-fujishige_wolfe_submodular_minimization!(
-    workspace,
-    instance;
-    ε=epsilon,
-    max_iterations=MAX_ITERATIONS,
-    verbose=false,
-)
-```
-
-This separates:
-
-- problem dimension / workspace size; and
-- maximum permitted iterations.
-
-This change fixes the earlier `OutOfMemoryError()` behaviour in `AffineWorkspace`.
-
----
-
-## 8.3 Matching adapter: `BitVector` compatibility
-
-Julia's
-
-```julia
-falses(n)
-```
-
-returns a `BitVector`, not a `Vector{Bool}`.
-
-The matching evaluator originally used a method signature such as:
-
-```julia
-augment(left::Int, selected::Vector{Bool})
-```
-
-and therefore failed when the actual argument was a `BitVector`.
-
-The adapter was changed to:
-
-```julia
-augment(left::Int, selected::AbstractVector{Bool})
-```
-
-so that both ordinary boolean vectors and packed `BitVector`s are accepted.
-
-This was an **adapter type bug**, not a flaw in the underlying SFM algorithm.
 
 ---
 
