@@ -99,14 +99,16 @@ Adding or subtracting the constant \(F(\varnothing)\) does not change the minimi
 
 A central object is the **base polyhedron**
 
-$$\[
-B(F)=
+$$
+\[
+B(F) =
 \left\{
 x\in\mathbb{R}^{n}:
 x(V)=F(V),\;
 x(S)\leq F(S)\quad \forall S\subseteq V
 \right\}.
-\]$$
+\]
+$$
 
 For an ordering $\(L=(v_1,\dots,v_n)\)$, a greedy extreme base is defined by
 
